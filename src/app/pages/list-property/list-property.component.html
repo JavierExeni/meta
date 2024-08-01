@@ -1,0 +1,7 @@
+@for (item of properties; track $index) {
+<a
+  [routerLink]="['/propiedades/', item.id, 8, item.created_by.id]"
+  style="margin-bottom: 12px; cursor: pointer; display: block"
+  >{{ item.property_title }}</a
+>
+}
